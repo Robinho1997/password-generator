@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="options">
+            <h1>PASSWORD <br> GENERATOR</h1>
+            <button id="generate-btn" class="generate-btn">GENERATE PASSWORDS
+                <img width="20px" src="img/arrow-right.png" alt="">
+            </button>
+            <div class="checkboxes">
+                <div>
+                    <input type="checkbox" name="" id="uppercase">
+                    <label for="uppercase">Uppercase letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="numbers">
+                    <label for="numbers">Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="symbols">
+                    <label for="symbols">Symbols</label>
+                </div>
+            </div>
+            <div class="slider">
+
+                <input type="range" id="lengthInput" value="10" min="1" max="20"
+                    oninput="lengthOutput.value = `Length : ${lengthInput.value}`">
+                <output id="lengthOutput" style="color: aliceblue;"> Length : 10</output>
+            </div>
+        </div>
+
+        <div class="password-container">
+
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
